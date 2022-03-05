@@ -1,4 +1,4 @@
-import { useState, useContext, useEffect } from "react";
+import { useState, useContext } from "react";
 import "./Searchbar.css";
 
 // Context
@@ -13,10 +13,6 @@ const Searchbar = () => {
 
   const showsContext = useContext(ShowsContext);
   const { searchShows } = showsContext;
-  useEffect(() => {
-    searchShows(searchTerm);
-    setSearchTerm("");
-  }, []);
 
   const { alert, setAlert } = useContext(AlertsContext);
 
