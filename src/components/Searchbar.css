@@ -1,0 +1,19 @@
+.searchbar {
+  width: 100%;
+  margin: 2rem 0;
+}
+
+.searchbar__form > input {
+  width: 100%;
+  padding: 10px 17px;
+  border: 1px solid var(--dark-color);
+  background: var(--offwhite-color);
+  color: var(--dark-color);
+  font-size: 20px;
+  outline-width: 0ch;
+}
+
+.searchbar__form > input:focus {
+  border: 1px solid var(--secondary-color);
+  box-shadow: 0 0 1px 1px rgba(60, 148, 139, 0.5);
+}
